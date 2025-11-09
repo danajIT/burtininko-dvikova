@@ -1,0 +1,7 @@
+.health-bar > .bar {
+    -fx-background-color: red;
+}
+
+.mana-bar > .bar {
+    -fx-background-color: blue;
+}

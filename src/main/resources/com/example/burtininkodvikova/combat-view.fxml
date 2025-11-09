@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.burtininkodvikova.fxController.CombatController">
+   <children>
+      <VBox layoutX="14.0" layoutY="9.0" prefHeight="383.0" prefWidth="190.0">
+         <children>
+            <ImageView fx:id="wizardImage" fitHeight="312.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="70.0" prefWidth="117.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="wizardName" text="Player 1" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="wizardLvl" text="1 lvl" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="70.0" prefWidth="117.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="healthLabel" text="Health" />
+                               <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="healthValue" text="100/100" />
+                           </children>
+                        </HBox>
+                        <ProgressBar fx:id="healthBar" prefWidth="200.0" progress="0.0" styleClass="health-bar" />
+                        <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="manaLabel" text="Mana" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="manaValue" text="50/50" />
+                           </children>
+                        </HBox>
+                        <ProgressBar fx:id="manaBar" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="402.0" layoutY="9.0" prefHeight="383.0" prefWidth="190.0">
+         <children>
+            <ImageView fx:id="wizardImage2" fitHeight="312.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="70.0" prefWidth="117.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="wizardName2" text="Player 2" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="wizardLvl2" text="1 lvl" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="70.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="healthLabel2" text="Health" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="healthValue2" text="100/100" />
+                           </children>
+                        </HBox>
+                        <ProgressBar fx:id="healthBar2" prefWidth="200.0" progress="0.0" styleClass="health-bar" />
+                        <HBox alignment="CENTER" prefHeight="7.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="manaLabel2" text="Mana" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="manaValue2" text="50/50" />
+                           </children>
+                        </HBox>
+                        <ProgressBar fx:id="manaBar2" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <TextArea fx:id="combatLogsField" editable="false" layoutX="213.0" layoutY="14.0" prefHeight="287.0" prefWidth="180.0" wrapText="true" />
+      <Button fx:id="castButton" layoutX="283.0" layoutY="352.0" mnemonicParsing="false" text="Cast" />
+      <Label fx:id="comboLabel" layoutX="200.0" layoutY="310.0" />
+      <ComboBox fx:id="spellsComboBox" layoutX="228.0" layoutY="314.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
